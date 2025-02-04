@@ -1,0 +1,171 @@
+QUESTION 1:What is the use of float property? Which property is the better alternative to it?
+
+The float property in CSS is used to position elements to the left or right within their container, it was launched with CSS1 and it decides whether an element should float to the left, right or not at all. It's commonly used for creating layouts.
+Absolutely positioned elements ignore the float property and elements next to a floating element will flow around it.
+Syntax of Float:
+float: none|left|right|initial|inherit;
+none- 	The element does not float. This is default 	
+left- 	The element floats to the left of its container 	
+right- 	The element floats the right of its container 	
+initial- Sets this property to its default value.	
+inherit- Inherits this property from its parent element
+EXAMPLE:
+img{
+	float:none;
+	}
+Better alternative to float is flexbox and grids as they provide more control, flexibility, and are easier to manage for responsive designs.
+The flex property sets the flexible length on flexible items.
+Flexbox (display: flex;):
+Ideal for one-dimensional layouts (row or column).
+
+.container {
+  display: flex;
+}
+Advantages: Easy alignment, responsive design, no need for clearfix.
+
+
+CSS Grid (display: grid;):
+Best for two-dimensional layouts (rows and columns).
+
+.container {
+  display: grid;
+}
+
+
+
+
+
+
+
+
+QUESTION 2:Explain the difference between absolute and relative positions.
+
+Relative Positioning
+Relative Positioning is a CSS technique that allows an element to be adjusted from its normal position.
+SYNTAX for relative positioning- position: relative; 
+When we set the top, right, bottom, and left properties of an element with relative positioning, it moves from its original location but other elements on the page will not fill the gap left by the moved element.
+EXAMPLE
+<style>
+        div.relative {
+            position: relative;
+            left: 50px;
+        }
+    </style>
+
+Absolute Positioning
+Absolute Position is a CSS technique that adjusts an element’s position relative to its parent. If no parent element is present, the document body is used as the parent. 
+SYNTAX for absolute positioning is position: absolute;
+<style> 
+        div.absolute {
+            position: absolute;
+            top: 80px;
+            right: 80px;
+        }
+    </style>
+USAGE OF BOTH:
+Use relative when we want to adjust an element's position while keeping its original space.
+Use absolute for precise positioning where the element doesn’t affect other content.
+
+
+
+
+
+
+QUESTION 3:What are the different types of CSS Selectors?
+
+CSS selectors are used to find or select the html elements that we want to style.
+They are of five categories:
+
+1. Simple selectors- Select elements based on name, id, class
+	a)Name :This selects HTML elements based on the element name.
+	Example:
+	p{
+  	text-align: center;
+  	color: red;
+	}
+	
+	b)ID:
+	#para1 {
+  	text-align: center;
+  	color: red;
+	}
+	c)Class:
+	.center {
+  	text-align: center;
+  	color: red;
+	} 
+	d) Universal selector: The universal selector (*) selects all HTML elements on the page.
+
+	* {
+	  text-align: center;
+	  color: blue;
+	} 
+2. Combinator selectors- Select elements based on a specific relationship between them.A CSS selector can contain more than one simple selector. Between the simple selectors, we can include a combinator.
+There are four different combinators in CSS:
+
+    a) Descendant combinator (space)
+    b) Child combinator (>)
+    c) Next sibling combinator (+)
+    d) Subsequent-sibling combinator (~)
+
+3. Pseudo-class selectors- Select elements based on a certain state.
+For example, it can be used to:
+
+    a) Style an element when a user moves the mouse over it
+    b) Style visited and unvisited links differently
+    c) Style an element when it gets focus
+    d) Style valid/invalid/required/optional form elements
+Syntax
+selector:pseudo-class {
+  property: value;
+}
+
+
+4. Pseudo-elements selectors- A CSS pseudo-element is used to style specific parts of an element. It can be used to:
+
+    a) Style the first letter or line, of an element
+    b) Insert content before or after an element
+    c) Style the markers of list items
+    d) Style the viewbox behind a dialog box
+Syntax
+selector::pseudo-element {
+  property: value;
+}
+
+5. Attribute selectors- Select elements based on an attribute or attribute value.
+This example selects all <a> elements with a target attribute:
+a[target] {
+  background-color: yellow;
+} 
+
+
+
+
+
+
+
+
+
+QUESTION 4:	How are inline and block elements different from each other?
+
+Block elements: They consume the entire width available irrespective of their sufficiency. They always start in a new line and have top and bottom margins. It does not contain any other elements next to it.
+
+Examples of Block elements:
+1. <h1>-<h6> : This element is used for including headings of different sizes ranging from 1 to 6.
+2. <div>: This is a container tag and is used to make separate divisions of content on the web page.
+3. <hr>: This is an empty tag and is used for separating content by horizontal lines.
+4. <li>: This tag is used for including list items of an ordered or unordered list.
+5. <ul>: This tag is used to make an unordered list.
+6. <ol>: This tag is used to make an ordered list.
+7. <p>: This tag is used to include paragraphs of content in the webpage.
+    
+Inline elements: Inline elements occupy only the width that is sufficient to them and allows other elements to be placed next to them. Inline elements do not start from a new line and do not have top and bottom margins as block elements have.
+
+Examples of Inline elements:
+
+1. <a>: This tag is used for including hyperlinks in the webpage.
+2. <br>: This tag is used for mentioning line breaks in the webpage wherever needed.
+3. <script> : This tag is used for including external and internal javaScript codes.
+4. <input>: This tag is used for taking input from the users.
+5. <img>: This tag is used for including different images in the webpage.
+6. <span>:  This is an inline container that takes necessary space only.
