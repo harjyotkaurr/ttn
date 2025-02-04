@@ -1,0 +1,65 @@
+QUESTION 2- 	
+Write the HTML code to create a table with 4 columns (ID, Employee Name, Designation, Department) and at least 6 rows.
+
+
+
+
+
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Employee Table</title>
+    
+</head>
+<body>
+
+<h1>Employee Details</h1>
+
+<table>
+    <tr>
+        <th>ID</th>
+        <th>Employee Name</th>
+        <th>Designation</th>
+        <th>Department</th>
+    </tr>
+    <tr>
+        <td>01</td>
+        <td>Harjyot Kaur</td>
+        <td>Software Engineer</td>
+        <td>IT</td>
+    </tr>
+    <tr>
+        <td>02</td>
+        <td>Prabhjot Kaur</td>
+        <td>Project Manager</td>
+        <td>Operations</td>
+    </tr>
+    <tr>
+        <td>03</td>
+        <td>Simran Kaur</td>
+        <td>Data Analyst</td>
+        <td>Analytics</td>
+    </tr>
+    <tr>
+        <td>04</td>
+        <td>Anjali</td>
+        <td>HR Executive</td>
+        <td>Human Resources</td>
+    </tr>
+    <tr>
+        <td>05</td>
+        <td>Neha</td>
+        <td>Marketing Head</td>
+        <td>Marketing</td>
+    </tr>
+    <tr>
+        <td>06</td>
+        <td>Ajay</td>
+        <td>UI/UX Designer</td>
+        <td>Design</td>
+    </tr>
+</table>
+
+</body>
+</html>
+

@@ -1,0 +1,21 @@
+QUESTION 4: What is semantic HTML? List some semantic and non-semantic elements.
+
+
+
+
+A semantic element describes its meaning to both the browser and the developer.
+
+Examples of non-semantic elements: <div> and <span> - Tells nothing about its content.
+
+Examples of semantic elements: <img>, <table>, and <article> - Clearly defines its content.
+
+Many web sites contain HTML code like: <div id="nav"> <div class="header"> <div id="footer"> to indicate navigation, header, and footer.
+
+In HTML there are several semantic elements that can be used to define different parts of a web page:  
+
+    <aside>-- The <aside> element defines some content aside from the content it is placed in (like a sidebar)
+    <footer>-- The <footer> element defines a footer for a document or section.It typically contains authorship information and copyright information
+    <header>-- 
+    <nav>-- The <nav> element defines a set of navigation links.
+    <section>-- Defines a section in a document
+    <summary>-- Defines a visible heading for a <details> element

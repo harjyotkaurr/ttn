@@ -1,0 +1,42 @@
+QUESTION 1- What is HTML, and how is an HTML document structured?
+
+
+
+
+HTML (Hypertext Markup Language) is the standard language used to create and structure web pages. It provides a way to define the layout of a page using various tags and attributes. These tags specify different sections of the page, such as headings, paragraphs, links, images, and other elements.
+
+HTML5:
+HTML5 is the latest version of HTML and comes with a variety of improvements and new features. Its main aim was to enhance support for multimedia (like audio and video) and modern web applications.
+
+1. New Structural Elements: HTML5 introduced semantic tags to make the structure of web pages clearer:
+   header, footer, main, aside
+
+2. Multimedia Support: HTML5 added built-in support for embedding multimedia without requiring third-party plugins like 
+   audio, video
+
+Structure of an HTML Document:
+An HTML document follows a specific structure made up of nested elements.
+
+<!DOCTYPE html>: This declaration at the top of the document specifies the HTML version being used.
+  
+<html>: The root element that wraps the entire content of the HTML document.
+
+<head>: This section contains meta-information about the page, such as the title, character encoding, and links to stylesheets or scripts.
+
+<body>: The section that holds the visible content of the web page, such as text, images, and other media.
+
+Simple HTML Document Example:
+
+<html>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Simple HTML Page</title>
+</head>
+<body>
+    <h1>Welcome to My Simple HTML Page</h1>
+    <p>This is a paragraph on the page.</p>
+</body>
+</html>

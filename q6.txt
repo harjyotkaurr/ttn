@@ -1,0 +1,36 @@
+QUESTION 6: What are IDs and classes in HTML, and how do they differ?
+
+IDs and Classes in HTML are used to identify and style elements using CSS or manipulate them with JavaScript.
+
+ID:
+Unique Identifier:Each ID must be unique within a page.It is used to target specific elements.
+Uses `#` to target (e.g., `#header`).
+Easy to select with `getElementById()`.
+
+Example:  
+html
+<div id="header">Welcome!</div>
+
+<style>
+  #header { color: blue; }
+</style>
+Class:
+It is a reusable identifier which can be assigned to multiple elements.
+Used to apply the same style or behavior to multiple elements.
+Uses `.` to target (e.g., `.highlight`).
+Select with `getElementsByClassName()` or `querySelectorAll()`.
+
+Example:  
+<p class="highlight">Important text 1.</p>
+<p class="highlight">Important text 2.</p>
+
+<style>
+  .highlight { background-color: yellow; }
+</style>
+
+Difference between them:
+An ID is a unique identifier assigned to a single element on a webpage. It is primarily used when you need to style or manipulate a specific element, as it has higher specificity in CSS. IDs are selected using the `#` symbol in CSS and can be accessed in JavaScript with `getElementById()`. For example, `<div id="header">` targets only one unique header on the page.
+
+In contrast, a class is a reusable identifier that can be applied to multiple elements, making it ideal for applying the same style or behavior to a group of elements. Classes are selected using the `.` symbol in CSS and accessed in JavaScript with `getElementsByClassName()` or `querySelectorAll()`. For instance, `<p class="highlight">` can be used on multiple paragraphs to give them a uniform style.
+
+While IDs offer higher specificity in CSS, making them override class styles when both are applied, classes provide greater flexibility due to their reusability across multiple elements.
