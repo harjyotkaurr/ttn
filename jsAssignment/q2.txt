@@ -1,5 +1,6 @@
 QUESTION 2: What are data types in Javascript? Explain the different types of data types with examples.
 
+
 JavaScript is loosely-typed, means variables can hold different data types. It is dynamic, case-sensitive language.
 In Javascript, data types are broadly categorized into 2 types:-
 a) Primitive Data types
@@ -13,15 +14,15 @@ Number: Represents both integer and floating-point numbers. Example:
 let age = 25;
 let price = 99.99;
 
-BigInt: Used for very large integers beyond the safe limit of the Number type.Example:
+BigInt: Used for very large integers beyond the safe limit of the number type.Example:
 let bigNumber = 12345678901234567890n;
 
-Boolean: Represents logical values: true or false. Example:
+Boolean: Represents logical values like true and false. Example:
 let isStudent = true;
 
-Undefined: A variable declared but not assigned any value.Example:
+Undefined: A variable declared but it does not have any value assigned to it.Example:
 let score;
-console.log(score); // undefined
+console.log(score);
 
 Null: Represents an intentional absence of any value.Example:
 let data = null;
