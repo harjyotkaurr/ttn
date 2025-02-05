@@ -1,0 +1,47 @@
+QUESTION 2: What are data types in Javascript? Explain the different types of data types with examples.
+
+JavaScript is loosely-typed, means variables can hold different data types. It is dynamic, case-sensitive language.
+In Javascript, data types are broadly categorized into 2 types:-
+a) Primitive Data types
+b) Non - Primitive Data types
+
+Primitive Data types- They are immutable and hold single values.
+String: Represents textual data. Example:
+let name = "Aarav";
+
+Number: Represents both integer and floating-point numbers. Example:
+let age = 25;
+let price = 99.99;
+
+BigInt: Used for very large integers beyond the safe limit of the Number type.Example:
+let bigNumber = 12345678901234567890n;
+
+Boolean: Represents logical values: true or false. Example:
+let isStudent = true;
+
+Undefined: A variable declared but not assigned any value.Example:
+let score;
+console.log(score); // undefined
+
+Null: Represents an intentional absence of any value.Example:
+let data = null;
+
+
+Non - Primitive data types: They are mutable, dynamic and can store multiple values.
+
+Object: It is used to store key-value pairs. Example:
+let trainee = {
+  name: "Harjyot",
+  age: 21
+};
+
+Array: A special type of object to store ordered collections. Example:
+let fruits = ["Mango", "Banana", "Apple"];
+
+Function:It is a block of reusable code. Example:
+function greet() {
+  console.log("Hello, world!");
+}
+
+Date:It represents date and time. Example:
+let today = new Date()
