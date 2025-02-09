@@ -31,6 +31,13 @@ nav ul{
     list-style: none;
 
 }
+nav a{
+    text-decoration: none;
+    color: black;
+}
+nav li{
+    position: relative;
+}
 nav ul li {
     white-space: nowrap;
     padding: 15px 20px;
@@ -40,10 +47,55 @@ nav ul li {
 nav ul li:hover {
     color: rgb(253, 173, 0);
 }
+nav ul li a:hover {
+    color: rgb(253, 173, 0);
+}
+.submenu {
+    display: none;
+    position: absolute;
+    top: 100%; 
+    left: 0;    
+    background-color: #fff;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.15);
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    min-width: 200px; 
+    z-index: 1000;
+  }
+  
+ 
+  .submenu li a {
+    padding: 10px 20px;
+    color: #333;
+    white-space: nowrap; 
+  }
+  
+ 
+  .navbar a:hover, .submenu li a:hover {
+    background-color: #f0f0f0;
+    color: #007bff;
+  }
+  
+ 
+  .dropdown:hover .submenu {
+    display: block;
+  }
+  
 .top-line {
     border: none;
     height: 1px;
     background-color: rgb(187, 177, 177);
+}
+
+.inline{
+    display: flex;
+    gap: 20px; /* Space between options */
+    align-items: center;
+}
+
+.inline label {
+    margin-right: 10px;
 }
 
 
@@ -69,7 +121,7 @@ nav ul li:hover {
 
     .hamburger {
         display: flex;
-        /* justify-content: flex-start; */
+        
     }
 
     nav.active {
@@ -241,25 +293,54 @@ footer {
     background-color: #222;
     color: white;
     display: flex;
-    justify-content: space-around;
-    padding: 30px;
     flex-wrap: wrap;
+    justify-content: space-around;
+    padding: 30px 50px;
 }
 
-footer div {
-    padding-bottom: 15px;
-    margin: 10px;
+.footer-section {
     max-width: 200px;
-    display: flex;
-    justify-content: center;
-    flex-wrap: wrap;
+    margin-bottom: 20px;
 }
-footer ul li, h4{
-   margin-bottom: 15px;
+
+footer h4 {
+    margin-bottom: 15px;
+}
+
+footer ul {
     list-style: none;
+    padding: 0;
 }
-.contactFooter{
-    flex-basis: 100%;
-    /* display: block;
-    justify-content: space-evenly; */
+
+footer ul li {
+    margin-bottom: 10px;
 }
+
+
+.contactFooter {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-top: 1px solid #444; 
+    padding: 20px 0;
+    margin-top: 20px;
+}
+
+.contactFooter p {
+    margin: 0;
+    padding-left: 20px;
+}
+
+.footer-links {
+    display: flex;
+    gap: 20px;
+    padding-right: 20px;
+}
+
+.footer-links li {
+    margin: 0;
+    cursor: pointer;
+}
+
+

@@ -29,12 +29,22 @@
     <nav>
         <ul>
             <li style=>HOME</a></li>
-            <li style=>SINGLE POSTS</a></li>
-            <li style=>PAGES</a></li>
-            <li style=>CATEGORY</a></li>
-            <li style=>ABOUT</a></li>
-            <li style=>CONTACT ME</a></li>
-            <li style=>FEATURES</a></li>
+            <li class="dropdown">
+                <a href="#">SINGLE POSTS &#9662;</a>
+                <ul class="submenu">
+                  <li><a href="#">Right Sidebar Post</a></li>
+                  <li><a href="#">Fullwidth Post</a></li>
+                  <li><a href="#">Left Sidebar Post</a></li>
+                  <li><a href="#">Gallery Post</a></li>
+                  <li><a href="#">Video Post</a></li>
+                  <li><a href="#">Music Post</a></li>
+                </ul>
+              </li>
+            <li style=>PAGES &#9662;</a></li>
+            <li style=>CATEGORY &#9662;</a></li>
+            <li style=>ABOUT &#9662;</a></li>
+            <li style=>CONTACT ME &#9662;</a></li>
+            <li style=>FEATURES &#9662;</a></li>
         </ul>
     </nav>
 </header>
@@ -64,8 +74,9 @@
         <input type="password" id="password" name="password" required><br>
 
         <label>Gender </label><br>
+        <div class="inline">
         <input type="radio" name="gender" value="Male" required> Male
-        <input type="radio" name="gender" value="Female"> Female<br>
+        <input type="radio" name="gender" value="Female"> Female<br></div>
 
         <label for="city">City </label><br>
         <select id="city" name="city" required>
@@ -77,10 +88,11 @@
         </select><br>
 
         <label>Hobbies </label><br>
+        <div class="inline">
         <input type="checkbox" name="hobbies" value="Reading"> Reading
         <input type="checkbox" name="hobbies" value="Writing"> Writing
         <input type="checkbox" name="hobbies" value="Music"> Music
-        <input type="checkbox" name="hobbies" value="Sports"> Sports<br>
+        <input type="checkbox" name="hobbies" value="Sports"> Sports<br></div>
 
         <label for="message">Message</label><br>
         <textarea id="message" name="message" rows="5" required></textarea><br>
@@ -103,24 +115,7 @@
 
 
 <footer>
-    <div>
-        <h4>Recent Posts</h4>
-        <ul>
-            <li> Beauty of Nature</li>
-            <li>Fashion Model Shoot</li>
-            <li>Golden Snow Land</li>
-        </ul>
-    
-    </div>
-    <div>
-        <h4>Popular Posts</h4>
-        <ul>
-            <li>Top 10 Ingredients</li>
-            <li>Family Comes First</li>
-            <li>Golden Snow Land</li>
-        </ul>
-    </div>
-    <div>
+    <div class="footer-section">
         <h4>Recent Posts</h4>
         <ul>
             <li>Beauty of Nature</li>
@@ -128,27 +123,46 @@
             <li>Golden Snow Land</li>
         </ul>
     </div>
-    <div>
+
+    <div class="footer-section">
         <h4>Popular Posts</h4>
         <ul>
             <li>Top 10 Ingredients</li>
             <li>Family Comes First</li>
             <li>Golden Snow Land</li>
         </ul>
-        
     </div>
-    <hr class="top-line">
+
+    <div class="footer-section">
+        <h4>Recent Posts</h4>
+        <ul>
+            <li>Beauty of Nature</li>
+            <li>Fashion Model Shoot</li>
+            <li>Golden Snow Land</li>
+        </ul>
+    </div>
+
+    <div class="footer-section">
+        <h4>Popular Posts</h4>
+        <ul>
+            <li>Top 10 Ingredients</li>
+            <li>Family Comes First</li>
+            <li>Golden Snow Land</li>
+        </ul>
+    </div>
+
+   
     <div class="contactFooter">
-        <div class="right">&copy Copyright LetsBlog Theme Demo- Theme by ThemeGoods</div>
-        <div class="left"><ul>
+        <p>&copy; Copyright LetsBlog Theme Demo - Theme by ThemeGoods</p>
+        <ul class="footer-links">
             <li>Home</li>
             <li>Lifestyle</li>
             <li>About</li>
             <li>Contact Me</li>
         </ul>
     </div>
-    </div>
 </footer>
+
 <script src="script.js"></script>
 </body>
 </html>
