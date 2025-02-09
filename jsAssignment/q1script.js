@@ -8,7 +8,7 @@ document.addEventListener('DOMContentLoaded', () => {
         fetch('https://jsonplaceholder.typicode.com/users')
             .then(response => response.json())
             .then(users => {
-                container.innerHTML = ''; // Clear previous data
+                container.innerHTML = '';
 
                 users.forEach(user => {
                     const userDiv = document.createElement('div');
